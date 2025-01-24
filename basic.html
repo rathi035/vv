@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic.css">
+  <title>Dark Themed Hero Section</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    /* Custom CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: #1a1a1a; /* Dark header background */
+      padding: 15px 30px;
+    }
+
+    .header .navbar-brand {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .header .nav-link {
+      color: #b3b3b3;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .header .nav-link:hover {
+      color: #ffffff;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background-image: url('fronpage.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    }
+
+    .hero-content {
+      z-index: 1; /* Bring content above the overlay */
+    }
+
+    .hero-heading {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-subheading {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      color: #d1d1d1; /* Subtle text color */
+    }
+
+    .btn-dark-theme {
+      background-color: #007bff; /* Primary blue */
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .btn-dark-theme:hover {
+      background-color: #0056b3; /* Darker blue */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="d-flex align-items-center justify-content-between">
+        <h1 class="navbar-brand">LearnSphere</h1>
+        <br>
+          <a href="#home" class="nav-link">Home</a>
+          <a href="coursepage.html" class="nav-link">Courses</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+    </br>
+      </nav>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1 class="hero-heading">Empower Your Future with LearnSphere</h1>
+      <p class="hero-subheading">
+        Explore thousands of online courses designed to help you learn at your own pace.
+      </p>
+      <div>
+        <a href="coursepage.html" class="btn btn-dark-theme">Explore Courses</a>
+        <a href="#signup" class="btn btn-outline-light">Sign Up Free</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Section -->
+<div class="category-section py-5">
+  <div class="container text-center">
+    <h2 class="category-heading">Explore Popular Categories</h2>
+    <p class="category-subheading">Choose from a wide range of categories tailored to your interests.</p>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-laptop"></i>
+          <h5>Technology</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-briefcase"></i>
+          <h5>Business</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-brush"></i>
+          <h5>Design</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-code-slash"></i>
+          <h5>Programming</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-book"></i>
+          <h5>Personal Development</h5>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="category-card">
+          <i class="bi bi-globe"></i>
+          <h5>Languages</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Courses Section -->
+<section class="featured-courses py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Trending Courses</h2>
+    <div class="row">
+      <!-- Course Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white">
+          <img src="web development.jpg" class="card-img-top" alt="Course 1">
+          <div class="card-body">
+            <h5 class="card-title">Web Development </h5>
+            <p class="card-text">
+              Learn HTML, CSS, JavaScript, and become a Full-Stack Developer.
+            </p>
+            <p class="card-text"><small>Instructor: John Doe</small></p>
+            <a href="coursepage.html" class="btn btn-primary btn-sm">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white">
+          <img src="data science.jpg" class="card-img-top" alt="Course 2">
+          <div class="card-body">
+            <h5 class="card-title">Data Science Bootcamp</h5>
+            <p class="card-text">
+              Master Python, R, and Data Analytics to level up your career.
+            </p>
+            <p class="card-text"><small>Instructor: Jane Smith</small></p>
+            <a href="#enroll" class="btn btn-primary btn-sm">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white">
+          <img src="uiux.jpg" class="card-img-top" alt="Course 3">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Design Essentials</h5>
+            <p class="card-text">
+              Design user-friendly websites and mobile apps with Figma.
+            </p>
+            <p class="card-text"><small>Instructor: Sarah Lee</small></p>
+            <a href="#enroll" class="btn btn-primary btn-sm">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-4">What Our Learners Say</h2>
+    <div class="row">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 text-center">
+          <img
+            src="man1.jpg"
+            alt="User 1"
+            class="rounded-circle mb-3"
+          />
+          <p class="text-light">"LearnSphere transformed my career! The courses are fantastic, and the platform is so easy to use."</p>
+          <h5 class="text-primary">Jane Doe</h5>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 text-center">
+          <img
+            src="man2.jpg"
+            alt="User 2"
+            class="rounded-circle mb-3"
+          />
+          <p class="text-light">"I’ve gained so many skills. The flexibility to learn on my own time is amazing! I love it and easy to use.."</p>
+          <h5 class="text-primary">John Smith</h5>
+        </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="testimonial-card p-4 text-center">
+          <img
+            src="girl.jpg"
+            alt="User 3"
+            class="rounded-circle mb-3"
+          />
+          <p class="text-light">"Excellent content and instructors. I feel ready to tackle real-world challenges! actually loved it!!"</p>
+          <h5 class="text-primary">Sarah Lee</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<div class="why-choose-us-section py-5">
+  <div class="container text-center">
+    <h2 class="section-heading mb-4">Why Choose LearnSphere?</h2>
+    <p class="section-subheading mb-5">
+      Unlock the best learning experience with features designed to elevate your skills.
+    </p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white p-4">
+          <i class="bi bi-mortarboard-fill icon mb-3"></i>
+          <h4>Expert Instructors</h4>
+          <p>Learn from industry leaders with real-world expertise.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white p-4">
+          <i class="bi bi-globe2 icon mb-3"></i>
+          <h4>Learn Anytime, Anywhere</h4>
+          <p>Access your courses on any device, anywhere, anytime.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white p-4">
+          <i class="bi bi-award-fill icon mb-3"></i>
+          <h4>Recognized Certifications</h4>
+          <p>Gain certifications that enhance your career prospects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Plans Section -->
+<section class="pricing-plans py-5">
+  <div class="container text-center">
+    <h2 class="text-white mb-4">Choose Your Plan</h2>
+    <p class="text-muted mb-5">Flexible pricing for learners of all levels.</p>
+    <div class="row">
+      <!-- Basic Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg bg-dark text-white border-0 rounded">
+          <div class="card-body">
+            <h3 class="card-title mb-3">Basic</h3>
+            <p class="card-text">For individual learners just getting started.</p>
+            <h4 class="card-price">$10/month</h4>
+            <a href="#signup" class="btn btn-primary mt-3">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!-- Premium Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg bg-dark text-white border-0 rounded">
+          <div class="card-body">
+            <h3 class="card-title mb-3">Premium</h3>
+            <p class="card-text">Access to all premium features and content.</p>
+            <h4 class="card-price">$20/month</h4>
+            <a href="#signup" class="btn btn-primary mt-3">Sign Up</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg bg-dark text-white border-0 rounded">
+          <div class="card-body">
+            <h3 class="card-title mb-3">Pro</h3>
+            <p class="card-text">For professional learners and organizations.</p>
+            <h4 class="card-price">$40/month</h4>
+            <a href="#signup" class="btn btn-primary mt-3">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<div id="about-us" class="about-us-section py-5">
+  <div class="container text-center">
+    <h2 class="about-heading">About LearnSphere</h2>
+    <p class="about-description">
+      At LearnSphere, we aim to make education accessible and enjoyable for everyone. With our ever-expanding library of online courses, experts from around the world come together to help you achieve your goals.
+    </p>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="about-card">
+          <h4>Our Mission</h4>
+          <p>Empowering individuals through quality education, promoting personal and professional growth.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="about-card">
+          <h4>Our Vision</h4>
+          <p>To become the world’s leading online learning platform by offering diverse, expert-led courses to every learner.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="about-card">
+          <h4>Our Values</h4>
+          <p>We value knowledge, integrity, and community, constantly striving for innovation in the learning experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="cta-section py-5">
+  <div class="container text-center">
+    <h2 class="cta-heading">Ready to Take the Next Step?</h2>
+    <p class="cta-subheading">Join LearnSphere today and start learning in minutes!</p>
+    <a href="#signup" class="btn btn-cta">Get Started Now</a>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p>LearnSphere is a leading platform offering online courses designed to empower learners globally. Discover new skills at your own pace with our affordable courses.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-light">Home</a></li>
+          <li><a href="#courses" class="text-light">Courses</a></li>
+          <li><a href="#pricing" class="text-light">Pricing</a></li>
+          <li><a href="#contact" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+        <div>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
+          <a href="#" class="text-light"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <div class="text-center">
+      <p>&copy; 2025 LearnSphere. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
